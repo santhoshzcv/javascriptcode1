@@ -32,6 +32,8 @@ window.onload= function() {
     button.onclick=function(){
         if(isvalid()){
             alert("login sucessfull");
+           localStorage.setItem('auth', name.value);
+            location.href="index.html";
         }
     
     }
